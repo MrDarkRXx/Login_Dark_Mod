@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="200.0dip"
+            android:layout_height="70.0dip"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="50.0sp"/>
+
+        <RelativeLayout
+            android:id="@+id/d_relay"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/d_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="15.0sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textAllCaps="false" />
+                    <EditText
+                        android:textSize="15.0sp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/d_name"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="15.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginTop="5.0dip" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip">
+                    <TextView
+                        android:textSize="15.0sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textAllCaps="false" />
+                    <EditText
+                        android:textSize="15.0sp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/d_ps"
+                        android:paddingLeft="15.0dip"
+                        android:paddingRight="15.0dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/log_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_below="@id/d_lay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40.0dip"
+                android:background="#cacaca"
+                android:paddingLeft="70.0dip"
+                android:paddingRight="70.0dip"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
